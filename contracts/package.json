@@ -1,0 +1,20 @@
+{
+  "name": "wine-traceability-contracts",
+  "version": "1.0.0",
+  "description": "Smart Contracts for Wine Traceability System",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:ganache": "hardhat run scripts/deploy.js --network ganache",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:localhost": "hardhat run scripts/deploy-localhost.js --network localhost",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "check": "hardhat run scripts/check-contract.js --network localhost",
+    "register-test": "hardhat run scripts/register-test-vineyard.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1"
+  }
+}
